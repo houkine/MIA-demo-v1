@@ -1,0 +1,318 @@
+
+/* ---------------------------------------------------------------------- basic css */
+.home-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------- header css */
+.header-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-color: #333333;
+}
+.header-contract{
+    height: 80%;
+    display: flex;
+    margin: auto;
+    margin-left: 5%;
+}
+.header-login{
+    height: 80%;
+    display: flex;
+    margin: auto;
+    margin-right: 5%;
+}
+.header-font{
+    font-size: 20px;
+    margin: auto 5px;
+    color: #ffffff;
+}
+
+/* ---------------------------------------------------------------------- Section1 css */
+.Section1-container{
+    width: 100%;
+    height: 190px;
+    display: flex;
+    background-color: #fff;
+}
+.Section1-logo{
+    height: 100px;
+    margin: auto;
+    margin-left: 5%;
+}
+.Section1-buttonArea{
+    display: flex;
+    margin: auto;
+    margin-right: 5%;
+}
+.Section1-buttonGap{
+    height: 100%;
+    width: 15px;
+}
+
+/* ---------------------------------------------------------------------- Section2 css */
+.Section2-container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #dbdbdb;
+}
+.Section2-button-movein{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: #000;
+    background-color: #fff;
+}
+.Section2-button-moveout{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    color: #4d4d4d;
+    background-color: #dbdbdb;
+}
+.Section2-buttonGap{
+    height: 100%;
+    width: 40px;
+}
+.Section2-dropdownList{
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.9),0 6px 20px 0 rgba(0,0,0,0.5);
+}
+.Section2-dropdownItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #4d4d4d;
+    cursor: pointer;
+}
+
+.Section2-course{
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------- Section3 css */
+.Section3-container{
+    width: 100%;
+    display: flex;
+}
+
+.Section3-image{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------- Section4 css */
+.Section4-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Section4-title{
+    margin: auto;
+    margin-top: 100px;
+    font-size: 54px;
+    font-weight: 100;
+}
+.Section4-content{
+    margin: auto;
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ---------------------------------------------------------------------- Section4 css */
+.Section4-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Section4-title{
+    margin: auto;
+    margin-top: 100px;
+    font-size: 54px;
+    font-weight: 100;
+}
+.Section4-content{
+    margin: auto;
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* ---------------------------------------------------------------------- Form Section css */
+.FormSection-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.FormSection-title{
+    /* margin: auto; */
+    margin-top: 55px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #6c64bd;
+}
+.FormSection-content{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.FormSection-gap{
+    width: 100%;
+    height: 10px;
+}
+
+/* ---------------------------------------------------------------------- Form Section css */
+.UploadDocumentsSection-documents{
+    width: 100%;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+}
+.UploadDocumentsSection-document{
+    width: 100%;
+    margin-top: 5px;
+}
+.UploadDocumentsSection-Button{
+    display: none;
+}
+
+/* ---------------------------------------------------------------------- Form Section css */
+.DeclarationSection-documents{
+    width: 100%;
+    margin-top: 10px;
+}
+.DeclarationSection-document{
+    width: 100%;
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 300;
+}
+/* ---------------------------------------------------------------------- Step Section css */
+.StepSection-gap{
+    width: 100%;
+    height: 50px;
+}
+
+/* ---------------------------------------------------------------------- Section5 css */
+.Section5-container{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.Section5-image{
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------------- Section6 css */
+.Section6-container{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.Section6-sector{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.Section6-gap{
+    width: 100%;
+    height: 10px;
+}
+.Section6-sector-head{
+    font-size: 28px;
+    font-weight: 600;
+    color: #4d4d4d;
+}
+.Section6-followus{
+    width: 300px;
+    margin: auto;
+    margin-top: 0;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.Section6-followus-icons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------------------------- Section7 css */
+.Section7-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    margin-top: 50px;
+    background-color: #333;
+}
+.Section7-Name{
+    margin: auto 0;
+    margin-left: 100px;
+    font-size: 48px;
+    color: #DDD;
+}
+.Section7-Logo{
+    margin: auto 0;
+    margin-left: 80px;
+}
+.Section7-legal{
+    margin: auto;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Section7-legal-item{
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 0;
+    font-size: 14px;
+    color: #DDD;
+}
+.Section7-image{
+    height: 80px;
+}
+
+/* ---------------------------------------------------------------------- Section7 css */
+.Section8-container{
+    height: 150px;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.Section8-image{
+    height: 80px;
+    margin: auto 0;
+    margin-left: 10px;
+}
