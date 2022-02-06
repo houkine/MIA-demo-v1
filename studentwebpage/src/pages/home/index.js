@@ -19,6 +19,9 @@ import Section8 from './Section8'
 
 import PersonalDetailsSection from './PersonalDetailsSection'
 import VisaInformationSection from './VisaInformationSection'
+import EnglishLanguageProficiencySection from './EnglishLanguageProficiencySection'
+import EducationAndEmploymentHistorySection from './EducationAndEmploymentHistorySection'
+import CourseInformationSection from './CourseInformationSection'
 
 
 import steps from '../../constant/steps'
@@ -61,7 +64,37 @@ const Index = (props) => {
     const [RequireCoE, setRequireCoE] = useState('')
     const [RequireCoEEvidence, setRequireCoEEvidence] = useState('')
     const [LocationLodgeStudentVisaApplication, setLocationLodgeStudentVisaApplication] = useState('')
+    const [RequireMIAOSHCType, setRequireMIAOSHCType] = useState('')
+    const [OSHCStartDate, setOSHCStartDate] = useState('')
+    
+    // ----------------English Language Proficiency
+    const [EnglishFirstLanguage, setEnglishFirstLanguage] = useState('')
+    const [EnglishTestTaken, setEnglishTestTaken] = useState('')
 
+    // ----------------Education And Employment History
+    const [Education1YearAttend, setEducation1YearAttend] = useState('')
+    const [Education1School, setEducation1School] = useState('')
+    const [Education1Qualification, setEducation1Qualification] = useState('')
+    const [Education1Country, setEducation1Country] = useState('')
+    const [Education2YearAttend, setEducation2YearAttend] = useState('')
+    const [Education2School, setEducation2School] = useState('')
+    const [Education2Qualification, setEducation2Qualification] = useState('')
+    const [Education2Country, setEducation2Country] = useState('')
+    const [Work1Year, setWork1Year] = useState('')
+    const [Work1CompanyName, setWork1CompanyName] = useState('')
+    const [Work1Position, setWork1Position] = useState('')
+    const [Work2Year, setWork2Year] = useState('')
+    const [Work2CompanyName, setWork2CompanyName] = useState('')
+    const [Work2Position, setWork2Position] = useState('')
+    const [Work3Year, setWork3Year] = useState('')
+    const [Work3CompanyName, setWork3CompanyName] = useState('')
+    const [Work3Position, setWork3Position] = useState('')
+    const [ApplyRPLTransfer, setApplyRPLTransfer] = useState('')
+
+    // ----------------Course InformationSection
+
+    // ----------------Unique Student Identifier
+    const [USINumber, setUSINumber] = useState('')
 
 
     return(
@@ -83,7 +116,7 @@ const Index = (props) => {
             {/* switch bar */}
             <FormContext.Provider value={{ 
                 activeStep, setActiveStep,
-                // Personal Details
+                // ----------------Personal Details
                 Title, setTitle, 
                 Gender, setGender,
                 FamilyName, setFamilyName,
@@ -102,7 +135,7 @@ const Index = (props) => {
                 EmergencyContactMobile, setEmergencyContactMobile,
                 EmergencyContactEmail, setEmergencyContactEmail,
                 EmergencyContactAddress, setEmergencyContactAddress,
-                // Visa Information
+                // ----------------Visa Information
                 AlreadyHaveAvisa, setAlreadyHaveAvisa,
                 TypeOfVisaYouHave, setTypeOfVisaYouHave,
                 TypeOfVisaYouApply, setTypeOfVisaYouApply,
@@ -115,10 +148,41 @@ const Index = (props) => {
                 RequireCoE, setRequireCoE,
                 RequireCoEEvidence, setRequireCoEEvidence,
                 LocationLodgeStudentVisaApplication, setLocationLodgeStudentVisaApplication,
+                RequireMIAOSHCType, setRequireMIAOSHCType,
+                OSHCStartDate, setOSHCStartDate,
+                // ----------------English Language Proficiency
+                EnglishFirstLanguage, setEnglishFirstLanguage,
+                EnglishTestTaken, setEnglishTestTaken,
+                // ----------------Education And Employment History
+                Education1YearAttend, setEducation1YearAttend,
+                Education1School, setEducation1School,
+                Education1Qualification, setEducation1Qualification,
+                Education1Country, setEducation1Country,
+                Education2YearAttend, setEducation2YearAttend,
+                Education2School, setEducation2School,
+                Education2Qualification, setEducation2Qualification,
+                Education2Country, setEducation2Country,
+                Work1Year, setWork1Year,
+                Work1CompanyName, setWork1CompanyName,
+                Work1Position, setWork1Position,
+                Work2Year, setWork2Year,
+                Work2CompanyName, setWork2CompanyName,
+                Work2Position, setWork2Position,
+                Work3Year, setWork3Year,
+                Work3CompanyName, setWork3CompanyName,
+                Work3Position, setWork3Position,
+                ApplyRPLTransfer, setApplyRPLTransfer,
+                // ----------------Course InformationSection
+                // ----------------Unique Student Identifier
+                USINumber, setUSINumber,
             }}>
                 {{
                     0:<PersonalDetailsSection />,
                     1:<VisaInformationSection />,
+                    2:<EnglishLanguageProficiencySection />,
+                    3:<EducationAndEmploymentHistorySection />,
+                    4:<CourseInformationSection />,
+                    5:<CourseInformationSection />,
                 }[activeStep]}
                 <StepSection />
             </FormContext.Provider>
