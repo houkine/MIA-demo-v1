@@ -22,6 +22,9 @@ import VisaInformationSection from './VisaInformationSection'
 import EnglishLanguageProficiencySection from './EnglishLanguageProficiencySection'
 import EducationAndEmploymentHistorySection from './EducationAndEmploymentHistorySection'
 import CourseInformationSection from './CourseInformationSection'
+import UniqueStudentIdentifierSection from './UniqueStudentIdentifierSection'
+import PaymentOptionsSection from './PaymentOptionsSection'
+import TermsandConditionsSection from './TermsandConditionsSection'
 
 
 import steps from '../../constant/steps'
@@ -29,7 +32,8 @@ import steps from '../../constant/steps'
 export const FormContext = createContext()
 
 const Index = (props) => {
-    const [activeStep, setActiveStep] = useState(0)
+    const [activeStep, setActiveStep] = useState(5)
+    // const [activeStep, setActiveStep] = useState(0)
 
     // ----------------Personal Details
     const [Title, setTitle] = useState('')
@@ -95,6 +99,7 @@ const Index = (props) => {
 
     // ----------------Unique Student Identifier
     const [USINumber, setUSINumber] = useState('')
+    const [AuthorizeMIAApplyUSINumber, setAuthorizeMIAApplyUSINumber] = useState('')
 
 
     return(
@@ -175,6 +180,7 @@ const Index = (props) => {
                 // ----------------Course InformationSection
                 // ----------------Unique Student Identifier
                 USINumber, setUSINumber,
+                AuthorizeMIAApplyUSINumber, setAuthorizeMIAApplyUSINumber,
             }}>
                 {{
                     0:<PersonalDetailsSection />,
@@ -182,7 +188,9 @@ const Index = (props) => {
                     2:<EnglishLanguageProficiencySection />,
                     3:<EducationAndEmploymentHistorySection />,
                     4:<CourseInformationSection />,
-                    5:<CourseInformationSection />,
+                    5:<UniqueStudentIdentifierSection />,
+                    6:<PaymentOptionsSection />,
+                    7:<TermsandConditionsSection />,
                 }[activeStep]}
                 <StepSection />
             </FormContext.Provider>

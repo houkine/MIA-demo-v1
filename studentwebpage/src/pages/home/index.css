@@ -201,6 +201,11 @@
     display: flex;
     justify-content: space-between;
 }
+.FormSection-font{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+}
 /* ---------------------------------------------------------------------- Form Section css */
 .UploadDocumentsSection-documents{
     width: 100%;
@@ -226,6 +231,7 @@
     font-style: italic;
     font-weight: 300;
 }
+/* ---------------------------------------------------------------------- payment option css */
 /* ---------------------------------------------------------------------- Step Section css */
 .StepSection-gap{
     width: 100%;
